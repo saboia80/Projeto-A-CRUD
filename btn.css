@@ -1,0 +1,26 @@
+.btn {
+  border-style: none;
+  height: 30px;
+  padding: 6px 10px;
+  background-color: #1fb6ff;
+  color: white;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: black;
+  transition: 1s;
+}
+
+.btn.green {
+  background-color: #13ce66;
+}
+
+.btn.yellow {
+  background-color: rgba(255, 255, 0, 0.801);
+}
+
+.btn.red {
+  background-color: #ff4949;
+}

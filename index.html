@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="btn.css">
+  <link rel="stylesheet" href="tabela.css">
+  <link rel="stylesheet" href="modal.css">
+  <title>CRUD madilab</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="title">Web Dev academy</h1>
+    <ul class="ul">
+      <li><a class="active" href="#">inicio</a></li>
+      <li><a href="#">opções</a></li>
+      <li><a href="#">perfil</a></li>
+      <li><a href="#">ajuda</a></li>
+    </ul>
+  </header>
+  <main>
+    <button type="button" class="btn" id="cadastrarCliente">Novo Item</button>
+    <table id="TBClient" class="tabela">
+      <thead>
+        <div class="search-box">
+          <input type="text" class="search-text" placeholder="pesquisar itens">
+          <a href="#" class="search-button">
+            <i class="fa-solid fa-magnifying-glass" a href="#" class="search-button"></i>
+          </a>
+        </div>
+        <Tr>
+          <th>#</th>
+          <th>nome</th>
+          <th>email</th>
+          <th>celular</th>
+          <th>cidade</th>
+          <th>Nascimento</th>
+          <th>Documento</th>
+          <th>Estado Civil</th>
+          <th>PossuiFilhos</th>
+          <th>Profissão</th>
+          <th>Sexo</th>
+          <th>CEP</th>
+          <th>ação</th>
+        </Tr>
+      </thead>
+      <tbody>
+        <!-- <tr>
+          <td>1001</td>
+          <td>Gabriela</td>
+          <td>Gabriela@email.com</td>
+          <td>(021)9-9999-9999</td>
+          <td>Rio de janeiro</td>
+          <td>
+            <button type="button" class="btn green">Visualizar</button>
+            <button type="button" class="btn yellow">Editar</button>
+            <button type="button" class="btn red">Excluir</button>
+          </td>
+        </tr> -->
+      </tbody>
+    </table>
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <header class="modal-header">
+          <h2>Novo Cliente</h2>
+          <span class="modal-close" id="modalclose">&#10006;</span>
+        </header>
+        <form class="modal-form" id="formulario">
+          <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome" required>
+          <input type="email" id="email" class="modal-field" placeholder="Email" required>
+          <input type="number" id="telefone" class="modal-field" placeholder="Numero" required>
+          <input type="text" id="cidade" class="modal-field" placeholder="Cidade" required>
+          <input type="date" id="DataNascimento" class="modal-field" placeholder="DataNascimento" required>
+          <input type="text" id="Documento" class="modal-field" placeholder="Documento" required>
+          <input type="text" id="EstadoCivil" class="modal-field" placeholder="EstadoCivil" required>
+          <input type="text" id="PossuiFilhos" class="modal-field" placeholder="PossuiFilhos" required>
+          <input type="text" id="Profissão" class="modal-field" placeholder="Profissão" required>
+          <input type="text" id="Sexo" class="modal-field" placeholder="Sexo" required>
+          <input type="number" id="CEP" class="modal-field" placeholder="CEP" required>
+        </form>
+        <footer class="modal-footer">
+          <button class="button-green" id="salvar">Salvar</button>
+          <button class="button-red" id="cancelar">cancelar</button>
+        </footer>
+      </div>
+    </div>
+  </main>
+  <footer>
+    Copyright &copy; Matheus Saboia Raposo
+  </footer>
+  <script src="main.js"></script>
+  <script src="https://kit.fontawesome.com/d2e4016b87.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
